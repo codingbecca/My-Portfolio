@@ -18,11 +18,21 @@ body {
 
 .container {
     border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px;
+    box-shadow: 0px 2px 15px 2px #081f2b;
 }
 
 h2, h3 {
     text-align: center;
+}
+
+a {
+    color: #0c76ab;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #66ccff;
+    border-bottom: 2px solid #66ccff;
 }
 
 /* navbar */
@@ -41,15 +51,6 @@ nav {
     background-color: #fcfcfc;
 }
 
-nav a {
-    color: #0c76ab;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #66ccff;
-    border-bottom: 2px solid #66ccff;
-}
 
 nav ul {
     display: flex;
@@ -82,7 +83,7 @@ nav ul li {
 #about {
     width: 25rem;
     padding: 0.625rem;
-    margin: 1rem 0;
+    margin: 1rem 2rem;
 }
 
 
@@ -91,6 +92,7 @@ nav ul li {
 .skills-container {
     width: 40rem;
     margin-top: 5rem;
+    margin-right: 2rem;
 }
 
 .icon-container {
@@ -126,7 +128,125 @@ nav ul li {
     text-align: center;
     width: 20rem;
     border-radius: 11px;
-    box-shadow: 0 3px 10px;
+    box-shadow: 0 3px 10px #081f2b;
     padding: 20px;
     margin: 10px;
+}
+
+.project-details {
+    padding: 0.4rem;
+}
+
+/* contact page */
+
+.contact {
+    margin-top: 2rem;
+}
+
+.contact-form {
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 5px;
+    box-shadow: 0 3px 10px #081f2b;
+    border-radius: 11px;
+}
+
+.contact-form label {
+    line-height: 2.7em;
+    font-weight: bold;
+    color: #0c76ab;
+}
+
+.contact-form .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #0c76ab;
+}
+
+.send-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #66ccff;
+    border: 2px solid #0c76ab;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #081f2b;
+}
+
+.send-btn:hover {
+    background-color: #0c76ab;
+    border: 2px solid #0c76ab;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    background-color: #fcfcfc;
+    pad: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+}
+
+/* responsive design */
+@media screen and (max-width: 820px){
+    nav {
+        padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: #fcfcfc;
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+      }
+    
+       nav ul li {
+        margin: 8px;
+      }
+
+      .burger-menu {
+        display: block;
+      }
+    
+      nav ul.show {
+        transform: translateX(0);
+      }
+
+      .about-and-skills {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      #about, .skills-container, .contact {
+        width: 20rem;
+      }
+
+      .icon {
+        width: 5.875rem;
+      }
+
+      .projects-container {
+        flex-direction: column;
+      }
+
+      .contact {
+        margin: 0 auto;
+      }
+
+}
+
+@media screen and (max-width: 420px) {
+    #about, .skills-container, .contact {
+        width: 18rem;
+      }
 }

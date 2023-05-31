@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebecca Hart | Portfolio</title>
+    <link rel="stylesheet" href="resources/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <!-- icon-icon scripts -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+    <!-- js script -->
+        <script src="resources/app.js" defer></script>
+</head>
+<body>
+    <!-- Header Section-->
+    <header>
+        <nav>
+            <h1>Rebecca Hart</h1>
+            <ul class="navigation">
+                <li><a href="index.html #about" class="nav-link">About</a></li>
+                <li><a href="index.html #skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html #projects" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="burger-menu" id="burger-menu">
+                <ion-icon class="bars" name="menu-outline"></ion-icon>
+            </button>
+        </nav>
+    </header>
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form action="https://formsubmit.co/recomu" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name" class="input-field" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="Email" id="email" class="input-field" required>
+                <br>
+                <label for="subject">Subject:</label>
+                <input type="text" name="Subject" id="subject" class="input-field" required>
+                <br>
+                <label for="message">Message:</label>
+                <br>
+                <textarea name="Message" id="message" cols="60" rows="10" class="input-field" required></textarea>
+                <br>
+                <input type="submit" id="send-btn" class="send-btn" value="Send">
+            </form>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+        <p class="copy">&copy; Copyright 2023</p>
+        <p class="copy">
+          Built with &#x2661; by Rebecca Hart
+        </p>
+    </footer>
+</body>
+</html>
