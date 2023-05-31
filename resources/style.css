@@ -1,0 +1,132 @@
+/* CSS Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* universal styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+/* navbar */
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    color: #0c76ab;
+    background-color: #fcfcfc;
+}
+
+nav a {
+    color: #0c76ab;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #66ccff;
+    border-bottom: 2px solid #66ccff;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+}
+
+nav ul li {
+    font-weight: bold;
+}
+
+.burger-menu {
+    color: #0c76ab;
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+/* bio & skills */
+
+.about-and-skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* bio */
+
+#about {
+    width: 25rem;
+    padding: 0.625rem;
+    margin: 1rem 0;
+}
+
+
+/* skills */
+
+.skills-container {
+    width: 40rem;
+    margin-top: 5rem;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon-container img {
+    padding: 1.25rem;
+}
+
+
+.icon {
+    width: 11.875rem;
+}
+
+/* projects */
+
+.projects{
+    margin-top: 2rem;
+    padding: 32px 0;
+}
+
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card {
+    text-align: center;
+    width: 20rem;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px;
+    padding: 20px;
+    margin: 10px;
+}
